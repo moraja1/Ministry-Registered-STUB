@@ -1,5 +1,6 @@
 package cr.ac.una.ministryregisteredstub.controller;
 
+import cr.ac.una.ministryregisteredstub.presentation.controller.UserController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

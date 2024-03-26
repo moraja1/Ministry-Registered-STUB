@@ -1,6 +1,6 @@
 package cr.ac.una.ministryregisteredstub.data.repository;
 
-import cr.ac.una.ministryregisteredstub.data.model.User;
+import cr.ac.una.ministryregisteredstub.data.entities.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

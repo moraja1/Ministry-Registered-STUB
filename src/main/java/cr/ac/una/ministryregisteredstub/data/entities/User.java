@@ -1,4 +1,4 @@
-package cr.ac.una.ministryregisteredstub.data.model;
+package cr.ac.una.ministryregisteredstub.data.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
