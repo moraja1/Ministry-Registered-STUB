@@ -1,5 +1,5 @@
--- create schema ministry_stub;
--- use ministry_stub;
+create schema ministry_stub;
+use ministry_stub;
 
 create table stub_users
 (id bigint not null auto_increment,
