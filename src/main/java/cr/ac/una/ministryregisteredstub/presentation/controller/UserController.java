@@ -2,13 +2,11 @@ package cr.ac.una.ministryregisteredstub.presentation.controller;
 
 import cr.ac.una.ministryregisteredstub.business.service.UserService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/")
+@RequestMapping(value = "/api/", produces = "application/json")
+@CrossOrigin(origins = "*")
 public class UserController {
 
     private final UserService userService;
@@ -18,7 +16,9 @@ public class UserController {
     }
 
     @GetMapping("user/{id}")
-    public ResponseEntity<Boolean> isUserRegistered(@PathVariable String id){
-        return userService.existisUserByUsuario(id) ? ResponseEntity.ok().build() : ResponseEntity.notFound().build();
+    public Boolean isUserRegistered(@PathVariable("id") String id){
+        Boolean b = userService.existisUserByUsuario(id);
+        System.out.println();
+        return b;
     }
 }
